@@ -16,7 +16,7 @@
     "prefer-stable": true,
     "require": {
         "php": "^8.0",
-        "pop-schema/locationposts": "^0.8",
+        "pop-schema/locationposts": "^0.8.1",
         "pop-schema/posts-wp": "^0.8"
     },
     "require-dev": {

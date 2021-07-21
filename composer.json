@@ -16,7 +16,7 @@
     "prefer-stable": true,
     "require": {
         "php": "^8.0",
-        "pop-schema/locationposts": "^0.8.1",
+        "pop-schema/locationposts": "^0.8.2",
         "pop-schema/posts-wp": "^0.8"
     },
     "require-dev": {
@@ -45,7 +45,7 @@
     "extra": {
         "wordpress-install-dir": "vendor/wordpress/wordpress",
         "branch-alias": {
-            "dev-master": "0.8-dev"
+            "dev-master": "0.9-dev"
         }
     },
     "config": {

@@ -3,5 +3,5 @@ services:
         public: true
         autowire: true
 
-    PoPSchema\LocationPosts\ConditionalOnContext\AddLocationPostTypeToCustomPostUnionTypes\SchemaServices\TypeResolverPickers\LocationPostCustomPostTypeResolverPicker:
-        class: '\PoPSchema\LocationPostsWP\ConditionalOnContext\AddLocationPostTypeToCustomPostUnionTypes\Overrides\SchemaServices\TypeResolverPickers\LocationPostCustomPostTypeResolverPicker'
+    PoPSchema\LocationPosts\ConditionalOnContext\AddLocationPostTypeToCustomPostUnionTypes\SchemaServices\ObjectTypeResolverPickers\LocationPostCustomPostTypeResolverPicker:
+        class: '\PoPSchema\LocationPostsWP\ConditionalOnContext\AddLocationPostTypeToCustomPostUnionTypes\Overrides\SchemaServices\ObjectTypeResolverPickers\LocationPostCustomPostTypeResolverPicker'

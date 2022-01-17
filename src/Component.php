@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace PoPSchema\LocationPostsWP;
+namespace PoPCMSSchema\LocationPostsWP;
 
 use PoP\Root\Component\AbstractComponent;
-use PoPSchema\LocationPosts\Environment;
+use PoPCMSSchema\LocationPosts\Environment;
 
 /**
  * Initialize component
@@ -17,28 +17,26 @@ class Component extends AbstractComponent
      *
      * @return string[]
      */
-    public static function getDependedComponentClasses(): array
+    public function getDependedComponentClasses(): array
     {
         return [
-            \PoPSchema\LocationPosts\Component::class,
-            \PoPSchema\PostsWP\Component::class,
+            \PoPCMSSchema\LocationPosts\Component::class,
+            \PoPCMSSchema\PostsWP\Component::class,
         ];
     }
 
     /**
      * Initialize services
      *
-     * @param array<string, mixed> $configuration
      * @param string[] $skipSchemaComponentClasses
      */
-    protected static function initializeContainerServices(
-        array $configuration = [],
-        bool $skipSchema = false,
-        array $skipSchemaComponentClasses = []
+    protected function initializeContainerServices(
+        bool $skipSchema,
+        array $skipSchemaComponentClasses,
     ): void {
-        self::initServices(dirname(__DIR__));
+        $this->initServices(dirname(__DIR__));
         if (Environment::addLocationPostTypeToCustomPostUnionTypes()) {
-            self::initSchemaServices(dirname(__DIR__), $skipSchema, '/ConditionalOnContext/AddLocationPostTypeToCustomPostUnionTypes/Overrides');
+            $this->initSchemaServices(dirname(__DIR__), $skipSchema, '/ConditionalOnContext/AddLocationPostTypeToCustomPostUnionTypes/Overrides');
         }
     }
 }

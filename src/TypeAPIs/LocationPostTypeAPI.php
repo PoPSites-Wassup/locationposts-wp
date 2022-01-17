@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace PoPSchema\LocationPostsWP\TypeAPIs;
+namespace PoPCMSSchema\LocationPostsWP\TypeAPIs;
 
-use PoPSchema\LocationPosts\TypeAPIs\LocationPostTypeAPIInterface;
-use PoPSchema\PostsWP\TypeAPIs\PostTypeAPI;
+use PoPCMSSchema\LocationPosts\TypeAPIs\LocationPostTypeAPIInterface;
+use PoPCMSSchema\PostsWP\TypeAPIs\PostTypeAPI;
 use WP_Post;
 
 use function get_post;

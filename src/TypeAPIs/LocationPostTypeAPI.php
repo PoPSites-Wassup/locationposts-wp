@@ -20,7 +20,7 @@ class LocationPostTypeAPI extends PostTypeAPI implements LocationPostTypeAPIInte
      */
     public function isInstanceOfLocationPostType(object $object): bool
     {
-        return ($object instanceof WP_Post) && $object->post_type == \POP_LOCATIONPOSTS_POSTTYPE_LOCATIONPOST;
+        return ($object instanceof WP_Post) && $object->post_type === \POP_LOCATIONPOSTS_POSTTYPE_LOCATIONPOST;
     }
 
     /**
@@ -29,7 +29,7 @@ class LocationPostTypeAPI extends PostTypeAPI implements LocationPostTypeAPIInte
     public function getLocationPost(int | string $id): ?object
     {
         $post = get_post($id);
-        if (!$post || $post->post_type != \POP_LOCATIONPOSTS_POSTTYPE_LOCATIONPOST) {
+        if (!$post || $post->post_type !== \POP_LOCATIONPOSTS_POSTTYPE_LOCATIONPOST) {
             return null;
         }
         return $post;

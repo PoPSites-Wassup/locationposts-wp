@@ -40,7 +40,7 @@ class LocationPostTypeAPI extends PostTypeAPI implements LocationPostTypeAPIInte
      */
     public function locationPostExists(int | string $id): bool
     {
-        return $this->getLocationPost($id) != null;
+        return $this->getLocationPost($id) !== null;
     }
 
     public function getLocationPosts(array $query, array $options = []): array

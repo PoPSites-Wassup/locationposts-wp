@@ -4,13 +4,14 @@ declare(strict_types=1);
 
 namespace PoPCMSSchema\LocationPostsWP;
 
+use PoP\Root\Module\ModuleInterface;
 use PoP\Root\Module\AbstractModule;
 use PoPCMSSchema\LocationPosts\Environment;
 
 class Module extends AbstractModule
 {
     /**
-     * @return string[]
+     * @return array<class-string<ModuleInterface>>
      */
     public function getDependedModuleClasses(): array
     {
@@ -23,7 +24,7 @@ class Module extends AbstractModule
     /**
      * Initialize services
      *
-     * @param string[] $skipSchemaModuleClasses
+     * @param array<class-string<ModuleInterface>> $skipSchemaModuleClasses
      */
     protected function initializeContainerServices(
         bool $skipSchema,

@@ -46,8 +46,6 @@
         "getpop/definitions": "<0.8.9",
         "getpop/engine": "<0.8.9",
         "getpop/engine-wp-bootloader": "<0.8.9",
-        "getpop/query-parsing": "<0.8.9",
-        "getpop/field-query": "<0.8.9",
         "getpop/cache-control": "<0.8.9",
         "pop-api/api-rest": "<0.8.9",
         "pop-api/api-graphql": "<0.8.9",
@@ -131,7 +129,6 @@
         "graphql-by-pop/graphql-clients-for-wp": "<0.8.9",
         "graphql-by-pop/graphql-request": "<0.8.9",
         "graphql-by-pop/graphql-endpoint-for-wp": "<0.8.9",
-        "graphql-by-pop/graphql-query": "<0.8.9",
         "getpop/graphql-parser": "<0.8.9",
         "graphql-by-pop/graphql-server": "<0.8.9",
         "graphql-api/external-dependency-wrappers": "<0.8.9",
@@ -185,7 +182,7 @@
     },
     "type": "library",
     "description": "Implementation for WordPress of contracts from package \"LocationPosts\"",
-    "keywords": ["PRO", "locationposts-wp"],
+    "keywords": ["locationposts-wp"],
     "homepage": "https://github.com/PoPSchema/locationposts-wp",
     "license": "GPL-2.0-or-later",
     "authors": [
@@ -203,7 +200,7 @@
     "require-dev": {
         "johnpbloch/wordpress": ">=5.5",
         "phpunit/phpunit": "^9.5",
-        "rector/rector": "^0.13",
+        "rector/rector": "^0.14",
         "squizlabs/php_codesniffer": "^3.6",
         "szepeviktor/phpstan-wordpress": "^1.0"
     },

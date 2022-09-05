@@ -43,14 +43,19 @@ class LocationPostTypeAPI extends PostTypeAPI implements LocationPostTypeAPIInte
         return $this->getLocationPost($id) !== null;
     }
 
+    /**
+     * @return array<string|int>|object[]
+     * @param array<string,mixed> $query
+     * @param array<string,mixed> $options
+     */
     public function getLocationPosts(array $query, array $options = []): array
     {
         return $this->getPosts($query, $options);
     }
     /**
-     * @param array<string, mixed> $query
-     * @param array<string, mixed> $options
-     * @return array<string, mixed>
+     * @param array<string,mixed> $query
+     * @param array<string,mixed> $options
+     * @return array<string,mixed>
      */
     protected function convertCustomPostsQuery(array $query, array $options = []): array
     {

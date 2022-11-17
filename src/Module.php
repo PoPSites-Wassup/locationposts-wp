@@ -6,7 +6,6 @@ namespace PoPCMSSchema\LocationPostsWP;
 
 use PoP\Root\Module\ModuleInterface;
 use PoP\Root\Module\AbstractModule;
-use PoPCMSSchema\LocationPosts\Environment;
 
 class Module extends AbstractModule
 {
@@ -31,8 +30,6 @@ class Module extends AbstractModule
         array $skipSchemaModuleClasses,
     ): void {
         $this->initServices(dirname(__DIR__));
-        if (Environment::addLocationPostTypeToCustomPostUnionTypes()) {
-            $this->initSchemaServices(dirname(__DIR__), $skipSchema, '/ConditionalOnContext/AddLocationPostTypeToCustomPostUnionTypes/Overrides');
-        }
+        $this->initSchemaServices(dirname(__DIR__), $skipSchema, '/Overrides');
     }
 }

@@ -220,8 +220,8 @@
     ],
     "require": {
         "php": "^8.1",
-        "pop-cms-schema/locationposts": "^0.10.2",
-        "pop-cms-schema/posts-wp": "^0.10.2"
+        "pop-cms-schema/locationposts": "^0.11",
+        "pop-cms-schema/posts-wp": "^0.11"
     },
     "require-dev": {
         "johnpbloch/wordpress": ">=5.5",
